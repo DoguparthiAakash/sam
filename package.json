@@ -1,0 +1,22 @@
+{
+  "name": "sam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "client": "npm run --prefix client start",
+    "server": "nodemon server/index.js",
+    "dev": "concurrently "npm run server" "npm run --prefix client start""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
